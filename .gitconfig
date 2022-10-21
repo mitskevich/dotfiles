@@ -1,0 +1,26 @@
+[core]
+	editor = vim
+	autocrlf = false
+	excludesfile = ~/.gitignore_global
+	compression = -1
+	precomposeunicode = true
+	quotepath = false
+	ignorecase = false
+[user]
+	name = Sergey Mitskevich
+	email = sergey.mitskevich@overvis.com
+	signingkey = 20696988657FAC00
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+[alias]
+	ci = commit
+	co = checkout
+	st = status
+	gr = log --pretty=oneline --graph --abbrev-commit --all --decorate
+	hist = log --pretty=oneline --graph --abbrev-commit --decorate
+	vimdiff = difftool -y -t vimdiff
+	f = fetch --all -p
+[push]
+	default = matching
